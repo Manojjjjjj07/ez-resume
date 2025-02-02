@@ -1,18 +1,20 @@
+import { Toaster } from "@/components/ui/toaster";
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - EZ Resume",
-    absolute: "EZ Resume",
+    template: "%s - AI Resume Builder",
+    absolute: "AI Resume Builder",
   },
   description:
-    "Your Resume Buddy to help you easily create awesome resumes to showcase your awesomeness in AI style that will land you your dream job!"
-  };
+    "AI Resume Builder is the easiest way to create a professional resume that will help you land your dream job.",
+};
 
 export default function RootLayout({
   children,
@@ -21,8 +23,18 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
+      <html lang="en" suppressHydrationWarning>
+        <body className={inter.className}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Toaster />
+          </ThemeProvider>
+        </body>
       </html>
     </ClerkProvider>
   );
