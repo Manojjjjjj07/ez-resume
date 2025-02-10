@@ -24,7 +24,7 @@ export default function Navbar() {
             className="rounded-full"
           />
           <span className="text-xl font-bold tracking-tight">
-            AI Resume Builder
+            EZ Resume 
           </span>
         </Link>
         <div className="flex items-center gap-3">
