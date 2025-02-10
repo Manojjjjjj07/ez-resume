@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "@/assets/logo.png";
+import logo1 from "@/assets/ezrme.png";
 import ThemeToggle from "@/components/ThemeToggle";
 import { UserButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 p-3">
         <Link href="/resumes" className="flex items-center gap-2">
           <Image
-            src={logo}
+            src={logo1}
             alt="Logo"
             width={35}
             height={35}
