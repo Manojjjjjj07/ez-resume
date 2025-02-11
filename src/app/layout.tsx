@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "EZ Resume",
   },
   description:
-    "AI Resume Builder is the easiest way to create a professional resume that will help you land your dream job.",
+    "Create your Ideal Resumes professionally with EZ Resume, Your AI Powered Resume Buddy!",
 };
 
 export default function RootLayout({
