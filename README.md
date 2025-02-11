@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EZ Resume - An AI-Powered Resume Builder  
 
-## Getting Started
+A professional, AI-enhanced resume builder designed to simplify and streamline the resume creation process.  
 
-First, run the development server:
+**Access EZ Resume here:** [EZ Resume](https://ez-resume-mu.vercel.app/)  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack  
+- **Frontend:** Next.js 14, TypeScript, Tailwind CSS, React Hook Form  
+- **Backend:** Prisma ORM, PostgreSQL, Vercel Blob  
+- **Authentication:** Clerk Auth  
+- **AI Integration:** Gemini AI API  
+- **Drag & Drop:** dnd-kit  
+- **PDF Export:** react-to-print  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features  
+- **AI-Powered Auto-Fill** – Generates resume content based on job titles using the Gemini AI API.  
+- **Multi-Step Form** – Guided resume-building experience with React Hook Form.  
+- **Dynamic Sections** – Drag and drop to customize resume layout.  
+- **Auto-Save** – Saves progress automatically to prevent data loss.  
+- **PDF Export** – Print or download resumes in a professional format.  
+- **File Uploads** – Securely store and manage resume assets.  
+- **Mobile-Responsive** – Optimized UI using Tailwind CSS and ShadCN UI.  
+- **URL-Based Editing** – Resume data is stored via unique URLs for future updates.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About the Project  
+I built EZ Resume to provide a fast, flexible, and AI-assisted resume creation experience. The idea is to eliminate the hassle of traditional resume building by integrating automation, customization, and seamless export options.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is a part of my learning journey in full-stack development, AI integration, and user-centric web applications and started as a small idea to make resume building *not* suck. It turned into something way cooler. The goal? **No more generic resumes, no more clunky UI, just smooth, AI-powered resume building.**
 
-## Learn More
+Hope you find it useful!
 
-To learn more about Next.js, take a look at the following resources:
+With Love, SKM ❤
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Try it out:** [EZ Resume](https://ez-resume-mu.vercel.app/)  
