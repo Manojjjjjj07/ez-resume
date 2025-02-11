@@ -17,8 +17,11 @@ const eslintConfig = [
         "error",
         {
           "ignoreRestSiblings": true,
+          "varsIgnorePattern": "^_", // Ignores variables prefixed with "_"
+          "argsIgnorePattern": "^_", // Ignores function arguments prefixed with "_"
         },
       ],
+      "@typescript-eslint/no-unused-vars-experimental": "off", // (Optional) Disable stricter checking
     },
   },
 ];
